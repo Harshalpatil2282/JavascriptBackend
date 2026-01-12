@@ -10,7 +10,7 @@ const videoSchema = new moongose.Schema({
         required: true
     },
     owener:{
-        type: Schema.Type.ObjectId,
+        type: Schema.Types.ObjectId,
         ref:"User"
     },
     title:{
