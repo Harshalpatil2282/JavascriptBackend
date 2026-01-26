@@ -13,7 +13,7 @@ const uploadOnCloudinary = async (localFilePath)=>{
         // we need a time for uploadingin the file so use the await and host it into variable
         if(!localFilePath) return null;
 
-        const responce = await cloudinary.uploader.upload('localFilepath',{
+        const responce = await cloudinary.uploader.upload(localFilePath,{
             resource_type: "auto"
         })
         //file has been uploaded

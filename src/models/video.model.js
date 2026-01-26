@@ -41,4 +41,4 @@ const videoSchema = new moongose.Schema({
 },{timestamps: true})
 
 videoSchema.plugin(mongooseAggregatePaginate)
-export const Video = mongoose.model("Video",videoSchema) 
+export const Video = mongoose.model("Video",videoSchema)  // "Video" --> becomes "videos" on MongoDB
